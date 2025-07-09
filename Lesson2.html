@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments - 02 - Dressing</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="../js/livecode.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    
+
+      <a-entity
+        environment="preset: goldmine; 
+                     dressing: mushrooms; 
+                     dressingAmount: 200; 
+                     dressingColor: orange; 
+                     dressingScale: 1"
+      ></a-entity>
+      
+      <a-box id="box1" position="0 1 -2"
+             width="1" height="0.5" depth="2"
+             rotation="0 0 0"
+             color="red"
+      ></a-box>
+      
+      <a-box id="box2" position="2 1 0"
+             width="1" height="0.5" depth="2"
+             rotation="0 0 0"
+             color="yellow"
+      ></a-box>
+      
+      <a-box id="box3" position="-2 1 0"
+             width="1" height="0.5" depth="2"
+             rotation="0 0 0"
+             color="blue"
+      ></a-box>
+      
+      <a-box id="box4" position="0 1 2"
+             width="1" height="0.5" depth="2"
+             rotation="0 0 0"
+             color="green"
+      ></a-box>
+      
+       <a-link
+        position="-1.6 1.6 -2.8"
+        link="visualAspectEnabled:false"
+        href="./Lesson1.html"
+        title="Go to second environment"
+      >
+      <a-sphere radius="0.2" color="red"></a-sphere>  
+      </a-link>
+      <a-text position="-1.6 2 -2.8" 
+        value="Go BACK!" 
+        align="center"
+        color="white"
+      ></a-text>
+      
+       <a-link
+        position="1.6 1.6 -2.8"
+        link="visualAspectEnabled:false"
+        href="./Lesson3.html"
+        title="Go to second environment"
+      >
+      <a-sphere radius="0.2" color="green"></a-sphere>  
+      </a-link>
+       <a-text position="1.6 2 -2.8" 
+        value="Go to other sceen" 
+        align="center"
+        color="white"
+      ></a-text>
+      
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+      
+    </a-scene>
+  </body>
+</html>

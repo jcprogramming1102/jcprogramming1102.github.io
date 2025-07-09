@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments - 02 - Dressing</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="../js/livecode.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    
+
+      <a-entity
+        environment="preset: goldmine; 
+                     dressing: mushrooms; 
+                     dressingAmount: 200; 
+                     dressingColor: green; 
+                     dressingScale: 1"
+      ></a-entity>
+      <a-link
+        position="-2 0 -3"
+        link="visualAspectEnabled:false"
+        href="./Lesson1.html"
+        title="Go to second environment">
+        
+        <a-box id="box1"
+             width="1" height="8" depth="0.5"
+             rotation="0 0 0"
+             color="orange"
+      ></a-box>  
+      </a-link>
+      
+      
+      <a-link
+        position="2 0 -3"
+        link="visualAspectEnabled:false"
+        href="./Lesson2.html"
+        title="Go to second environment">
+        
+        <a-box id="box1"
+             width="1" height="8" depth="0.5"
+             rotation="0 0 0"
+             color="orange"
+      ></a-box>  
+      </a-link>
+      
+      <a-box id="box1" position="0 4 -3"
+             width="5" height="0.5" depth="1"
+             rotation="0 0 0"
+             color="orange"
+      ></a-box>
+      
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+      
+    </a-scene>
+  </body>
+</html>
