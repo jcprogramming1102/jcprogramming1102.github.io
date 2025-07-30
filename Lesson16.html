@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Primitives - 01 - Position</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="../js/livecode.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component/dist/aframe-event-set-component.min.js"></script>
+	 </head>
+  <body>
+    <a-scene cursor="rayOrigin: mouse">
+     
+	  <a-box
+	    id="redbox"
+		position="-2 1.6 -2"
+		
+		width="1"
+		height="1"
+		depth="1"
+		
+		rotation="0 0 0"
+		color="red"
+		event-set__mouseenter="rotation: 45 45 0"
+        event-set__mouseleave="rotation: 0 0 0" 
+	 ></a-box>
+	 
+      <a-box
+	    id="yellowbox"
+		position="0 1.6 -2"
+		
+		width="1"
+		height="1"
+		depth="1"
+		
+		rotation="0 0 0"
+		color="yellow"
+		event-set__mouseenter="color: blue"
+        event-set__mouseleave="color: yellow"
+	 ></a-box>
+	 
+	 <a-box
+	    id="greenbox"
+		position="2 1.6 -2"
+		
+		width="1"
+		height="1"
+		depth="1"
+		
+		rotation="0 0 0"
+		color="green"
+		event-set__mouseenter="color: blue"
+        event-set__mouseleave="color: green"
+	 ></a-box>
+	 
+      <a-sky color="lightblue"></a-sky>
+     <a-camera>
+	   <a-cursor></a-cursor>
+	</a-camera>
+	</a-scene>
+  </body>
+</html>

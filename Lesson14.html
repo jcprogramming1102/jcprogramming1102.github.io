@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Primitives - 01 - Position</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="../js/livecode.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity position="0 0 0">
+      
+	  <a-box
+	    id="box"
+		position="1 1 -3"
+		
+		width="5"
+		height="1"
+		depth="1"
+		
+		rotation="0 0 0"
+		color="white"
+	 ></a-box>
+
+	  <a-scene>
+  <a-cylinder segments-radial="3"></a-cylinder>
+</a-scene>
+
+		</a-entity>
+		
+		<a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="10"
+        height="10"
+        color="#7BC8A4"
+      ></a-plane>
+	  
+      <a-sky color="#ECECEC"></a-sky>
+      
+    </a-scene>
+  </body>
+</html>
